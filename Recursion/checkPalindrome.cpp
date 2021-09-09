@@ -7,15 +7,9 @@ bool isPalindrome(char str[],int s, int e)
 	if (s == e)
 	return true;
 
-	// If first and last
-	// characters do not match
 	if (str[s] != str[e])
 	return false;
 
-	// If there are more than
-	// two characters, check if
-	// middle substring is also
-	// palindrome or not.
 	if (s < e + 1)
 	return isPalindrome(str, s + 1, e - 1);
 
@@ -26,8 +20,6 @@ bool checkPalindrome(char str[])
 {
 	int n = strlen(str);
 	
-	// An empty string is
-	// considered as palindrome
 	if (n == 0)
 		return true;
 	
